@@ -7,7 +7,7 @@ require __DIR__ . '/includes/header.php';
     <div class="hero-copy">
         <p class="eyebrow">Strength coaching for every decade</p>
         <h1>Train strong now.<span>Live long and well.</span></h1>
-        <p class="lead">Three or four sessions a week, about an hour each. Coached for men over 60, women over 45, and women 25+, because the strength work and the wellness needs are not the same.</p>
+        <p class="lead">Three or four sessions a week, about an hour each. Coached for women 25+, women over 45, and men over 60, because the strength work and the wellness needs are not the same.</p>
         <div class="hero-actions">
             <a class="btn" href="/contact">Book a free consult</a>
             <a class="btn btn-ghost" href="/programs">See the three programs</a>

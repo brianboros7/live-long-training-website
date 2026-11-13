@@ -1,7 +1,7 @@
 <?php
 // Shared page header. Set $pageTitle and $pageDescription before including.
 $pageTitle       = isset($pageTitle) ? $pageTitle . ' | ' . SITE_NAME : SITE_NAME . ' | ' . SITE_TAGLINE;
-$pageDescription = $pageDescription ?? 'Evidence-based strength coaching for men over 60, women over 45 and women 25+.';
+$pageDescription = $pageDescription ?? 'Evidence-based strength coaching for women 25+, women over 45 and men over 60.';
 ?>
 <!doctype html>
 <html lang="en">
@@ -23,8 +23,19 @@ $pageDescription = $pageDescription ?? 'Evidence-based strength coaching for men
         <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
         <nav id="site-nav" class="site-nav" aria-label="Main">
             <ul>
-                <?php foreach (NAV as $path => $label): ?>
-                    <li><a href="<?= e($path) ?>"<?= is_current($path) ? ' aria-current="page"' : '' ?>><?= e($label) ?></a></li>
+                <?php foreach (NAV as $item): ?>
+                    <?php $menuId = 'menu-' . trim($item['href'], '/'); ?>
+                    <li class="nav-item">
+                        <a href="<?= e($item['href']) ?>"<?= is_current($item['href']) ? ' aria-current="page"' : '' ?>><?= e($item['label']) ?></a>
+                        <?php if (!empty($item['items'])): ?>
+                            <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="<?= e($menuId) ?>" aria-label="Open <?= e($item['label']) ?> menu"></button>
+                            <ul class="nav-sub" id="<?= e($menuId) ?>">
+                                <?php foreach ($item['items'] as $sub): ?>
+                                    <li><a href="<?= e($sub['href']) ?>"<?= is_current($sub['href']) ? ' aria-current="page"' : '' ?>><?= e($sub['label']) ?></a></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        <?php endif; ?>
+                    </li>
                 <?php endforeach; ?>
             </ul>
             <a class="btn btn-small" href="/contact">Free consult</a>

@@ -2,35 +2,25 @@
 require __DIR__ . '/includes/config.php';
 $pageTitle = 'Coaching';
 require __DIR__ . '/includes/header.php';
-
-// Draft tiers from research/04-business-takeaways.md. Prices are placeholders until decided.
-$tiers = [
-    ['name' => 'Starter Program', 'price' => 'TBD', 'per' => 'one-time', 'features' => ['12-week program', 'Exercise video library', 'Email support'], 'featured' => false],
-    ['name' => 'Online Coaching', 'price' => 'TBD', 'per' => 'per month', 'features' => ['Custom program', 'Weekly check-ins', 'Form video feedback', 'Retests every 8–12 weeks'], 'featured' => true],
-    ['name' => 'Coaching + Nutrition', 'price' => 'TBD', 'per' => 'per month', 'features' => ['Everything in Online Coaching', 'Protein-focused nutrition plan', 'Priority messaging'], 'featured' => false],
-];
 ?>
 <section class="page-hero">
     <div class="container">
         <h1>Coaching options</h1>
-        <p class="lead">Every option starts with a health screen and a movement assessment. Pricing is coming soon.</p>
+        <p class="lead">Both options start the same way. We build a custom periodization program for you, and your coach is available three times a week for questions and form support from the videos you upload. You still train three or four sessions a week, about an hour each. <a href="/pricing">See pricing.</a></p>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
-        <div class="tiers">
-            <?php foreach ($tiers as $t): ?>
-                <div class="tier<?= $t['featured'] ? ' tier-featured' : '' ?>">
-                    <?php if ($t['featured']): ?><span class="badge">Most popular</span><?php endif; ?>
-                    <h3><?= e($t['name']) ?></h3>
-                    <p class="price"><?= e($t['price']) ?> <small><?= e($t['per']) ?></small></p>
-                    <ul class="checklist">
-                        <?php foreach ($t['features'] as $f): ?><li><?= e($f) ?></li><?php endforeach; ?>
-                    </ul>
-                    <a class="btn<?= $t['featured'] ? '' : ' btn-ghost' ?>" href="/contact">Get started</a>
-                </div>
-            <?php endforeach; ?>
+        <div class="focus-grid">
+            <article class="focus-card" id="weekly">
+                <h2>1:1 Weekly</h2>
+                <p>We build a custom periodization program around your goals, history and schedule, and we meet in person once a week to train it together. Between those sessions your coach is available three times a week. Send a video of a lift and we answer on form, load and what to change before the next session.</p>
+            </article>
+            <article class="focus-card" id="monthly">
+                <h2>Monthly</h2>
+                <p>We build the same kind of custom periodization program, and we meet once a month to review how the block went and set the next one. Through the month your coach is available three times a week. Send a video of a lift and we answer on form, load and what to change before the next session.</p>
+            </article>
         </div>
     </div>
 </section>

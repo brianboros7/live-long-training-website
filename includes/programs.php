@@ -4,34 +4,34 @@
 declare(strict_types=1);
 
 const PROGRAMS = [
-    'men-60' => [
-        'title'    => 'Men over 60',
-        'headline' => 'Strong at 60, 70 and beyond',
-        'intro'    => 'Stay independent, keep the sports and the work you care about, and feel capable day to day. Strength and power training for men who want more decades of an active life.',
-        'card'     => 'Strength, power and balance for an independent life, with straight talk on food and recovery.',
+    'women-25' => [
+        'title'    => 'Women 25+',
+        'headline' => 'Build the body you\'ll live in for the next 50 years',
+        'intro'    => 'Efficient strength training for busy years: career, family, pregnancy, postpartum. Get stronger now, and put muscle and bone in the bank for your 40s.',
+        'card'     => 'Three or four hours a week that build strength and confidence now, and bone you\'ll want after 45.',
         'strength' => [
-            'lead'   => 'The work is the strength and speed you use to stand up, carry, climb and stay quick on your feet.',
+            'lead'   => 'Three or four sessions a week, about an hour each, that get harder over time. The point is skill and progress you can see, at home or in a gym.',
             'points' => [
-                'Compound lifts that match real life: squat or sit-to-stand, hinge, push, pull and carry',
-                'Power and balance practice aimed at staying steady and reacting in time',
-                'A joint-friendly start, then more load as you earn it',
-                'Three or four sessions a week, about an hour each',
+                'Learn the lifts properly. Confidence is the usual missing piece, not a special women\'s routine',
+                'Progressive load with simple tracking, so results are obvious',
+                'About an hour a session, scheduled around real life',
+                'The same fundamentals you\'ll still use after 45',
             ],
         ],
         'wellness' => [
-            'lead'   => 'Muscle needs food and recovery, not a hormone pitch. We measure function so you can see what changed.',
+            'lead'   => 'Energy, pregnancy and postpartum change the week. We adjust to how you feel, and we treat today\'s training as savings for later.',
             'points' => [
-                'Simple protein targets at meals, unless your doctor has set a lower limit',
-                'No testosterone program. Training, sleep and food are the work',
-                'Retests every 8 to 12 weeks: sit-to-stand, grip, balance and the lifts themselves',
-                'A health screen first, and a clear path to your doctor when something needs clearance',
+                'No cycle-syncing plan. Current evidence doesn\'t show that cycle phase changes strength results',
+                'Room to pull back on low-energy days without quitting the program',
+                'Pregnancy and postpartum options, with your provider\'s okay and a gradual return',
+                'Bone you build in your 20s and 30s is what you carry into the years after 45',
             ],
         ],
         'faq' => [
-            ['Am I too old to start?', 'No. Trials in adults in their 60s, 70s and older show strength and everyday function improve with well-designed training. We start at your level and build gradually.'],
-            ['I have an old injury. Can I still train?', 'Usually, yes. We screen your history first and change the exercises. If something needs a doctor\'s okay, we\'ll say so before we start.'],
-            ['Do you work on testosterone?', 'We don\'t make testosterone claims, and we don\'t sell hormone programs. Solid evidence that lifting meaningfully raises resting testosterone in older men is thin. What the evidence does support is getting stronger.'],
-            ['How much time does it take?', 'Three or four sessions a week, about an hour each. That is enough to build strength, power and the capacity you use every day. Shorter public-health minimums are not the program we coach.'],
+            ['Will lifting make me bulky?', 'Women build muscle at a similar rate to men relative to their size, but gain less in absolute terms. You get stronger. You don\'t get bulky by accident.'],
+            ['Should I train around my cycle?', 'An umbrella review of the research found no meaningful effect of cycle phase on strength or long-term gains. We adjust to how you actually feel that day, not to a phase calendar.'],
+            ['Can I train while pregnant?', 'Guidance supports strength training in pregnancy for most people without complications. Get your provider\'s okay and we\'ll adapt the program. Heavy lifting in pregnancy is a separate, more careful conversation.'],
+            ['Why start this young if I feel fine?', 'The bone and muscle you build in your 20s and 30s are what you bring into your 40s, and life only gets busier. Later coaching assumes you already know how to lift. Starting now is the easier version of that future.'],
         ],
     ],
     'women-45' => [
@@ -64,34 +64,34 @@ const PROGRAMS = [
             ['Will this fix hot flashes?', 'Strength training may help some women with hot flashes. The studies are mostly in postmenopausal women, and the evidence is not strong enough to promise it. What we will do is build strength, look after bone, and keep the plan workable when sleep is poor.'],
         ],
     ],
-    'women-25' => [
-        'title'    => 'Women 25+',
-        'headline' => 'Build the body you\'ll live in for the next 50 years',
-        'intro'    => 'Efficient strength training for busy years: career, family, pregnancy, postpartum. Get stronger now, and put muscle and bone in the bank for your 40s.',
-        'card'     => 'Three or four hours a week that build strength and confidence now, and bone you\'ll want after 45.',
+    'men-60' => [
+        'title'    => 'Men over 60',
+        'headline' => 'Strong at 60, 70 and beyond',
+        'intro'    => 'Stay independent, keep the sports and the work you care about, and feel capable day to day. Strength and power training for men who want more decades of an active life.',
+        'card'     => 'Strength, power and balance for an independent life, with straight talk on food and recovery.',
         'strength' => [
-            'lead'   => 'Three or four sessions a week, about an hour each, that get harder over time. The point is skill and progress you can see, at home or in a gym.',
+            'lead'   => 'The work is the strength and speed you use to stand up, carry, climb and stay quick on your feet.',
             'points' => [
-                'Learn the lifts properly. Confidence is the usual missing piece, not a special women\'s routine',
-                'Progressive load with simple tracking, so results are obvious',
-                'About an hour a session, scheduled around real life',
-                'The same fundamentals you\'ll still use after 45',
+                'Compound lifts that match real life: squat or sit-to-stand, hinge, push, pull and carry',
+                'Power and balance practice aimed at staying steady and reacting in time',
+                'A joint-friendly start, then more load as you earn it',
+                'Three or four sessions a week, about an hour each',
             ],
         ],
         'wellness' => [
-            'lead'   => 'Energy, pregnancy and postpartum change the week. We adjust to how you feel, and we treat today\'s training as savings for later.',
+            'lead'   => 'Muscle needs food and recovery, not a hormone pitch. We measure function so you can see what changed.',
             'points' => [
-                'No cycle-syncing plan. Current evidence doesn\'t show that cycle phase changes strength results',
-                'Room to pull back on low-energy days without quitting the program',
-                'Pregnancy and postpartum options, with your provider\'s okay and a gradual return',
-                'Bone you build in your 20s and 30s is what you carry into the years after 45',
+                'Simple protein targets at meals, unless your doctor has set a lower limit',
+                'No testosterone program. Training, sleep and food are the work',
+                'Retests every 8 to 12 weeks: sit-to-stand, grip, balance and the lifts themselves',
+                'A health screen first, and a clear path to your doctor when something needs clearance',
             ],
         ],
         'faq' => [
-            ['Will lifting make me bulky?', 'Women build muscle at a similar rate to men relative to their size, but gain less in absolute terms. You get stronger. You don\'t get bulky by accident.'],
-            ['Should I train around my cycle?', 'An umbrella review of the research found no meaningful effect of cycle phase on strength or long-term gains. We adjust to how you actually feel that day, not to a phase calendar.'],
-            ['Can I train while pregnant?', 'Guidance supports strength training in pregnancy for most people without complications. Get your provider\'s okay and we\'ll adapt the program. Heavy lifting in pregnancy is a separate, more careful conversation.'],
-            ['Why start this young if I feel fine?', 'The bone and muscle you build in your 20s and 30s are what you bring into your 40s, and life only gets busier. Later coaching assumes you already know how to lift. Starting now is the easier version of that future.'],
+            ['Am I too old to start?', 'No. Trials in adults in their 60s, 70s and older show strength and everyday function improve with well-designed training. We start at your level and build gradually.'],
+            ['I have an old injury. Can I still train?', 'Usually, yes. We screen your history first and change the exercises. If something needs a doctor\'s okay, we\'ll say so before we start.'],
+            ['Do you work on testosterone?', 'We don\'t make testosterone claims, and we don\'t sell hormone programs. Solid evidence that lifting meaningfully raises resting testosterone in older men is thin. What the evidence does support is getting stronger.'],
+            ['How much time does it take?', 'Three or four sessions a week, about an hour each. That is enough to build strength, power and the capacity you use every day. Shorter public-health minimums are not the program we coach.'],
         ],
     ],
 ];

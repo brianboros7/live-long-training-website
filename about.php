@@ -13,9 +13,9 @@ require __DIR__ . '/includes/header.php';
 <section class="section">
     <div class="container narrow prose">
         <h2>Who it's for</h2>
-        <p><strong><a href="/programs/men-60">Men over 60.</a></strong> Strength, power and balance for an independent life. Food and recovery, without testosterone marketing.</p>
-        <p><strong><a href="/programs/women-45">Women over 45.</a></strong> Muscle and bone from perimenopause through the years after menopause, with a plan that flexes when sleep and energy change.</p>
         <p><strong><a href="/programs/women-25">Women 25+.</a></strong> Short, progressive sessions for busy years, including pregnancy and postpartum when you need them. Strength you build now is what you take into your 40s.</p>
+        <p><strong><a href="/programs/women-45">Women over 45.</a></strong> Muscle and bone from perimenopause through the years after menopause, with a plan that flexes when sleep and energy change.</p>
+        <p><strong><a href="/programs/men-60">Men over 60.</a></strong> Strength, power and balance for an independent life. Food and recovery, without testosterone marketing.</p>
 
         <h2>Our approach</h2>
         <p><strong>Evidence first.</strong> We follow the research, not trends. No hormone hype, no gimmick workouts, no secret formulas.</p>
