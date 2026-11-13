@@ -19,7 +19,7 @@ $pageDescription = $pageDescription ?? 'Evidence-based strength coaching for men
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
     <div class="container header-inner">
-        <a class="logo" href="/"><span class="logo-words"><span class="logo-live">Live Long</span><span class="logo-sub">Training</span></span></a>
+        <a class="logo" href="/"><img src="/img/logo.png" alt="Live Long Training"></a>
         <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
         <nav id="site-nav" class="site-nav" aria-label="Main">
             <ul>

@@ -4,13 +4,17 @@
    Moves (life-stage roster), Stacy Sims (editorial serif), Caliber (dose as a spec). */
 
 :root {
+    /* Drawn from the infinity logo.
+       Light fields are tints of the cyan ribbon.
+       Orange is the Training word.
+       Ink stays the LiveLong navy, so the dark panels keep their place. */
     --ink: #142033;
-    --muted: #3e5164;
-    --sky: #b7e3f6;
-    --sky-deep: #8ecfee;
-    --contrast: #e23d1a;
-    --contrast-deep: #c23112;
-    --line: #c5d5e0;
+    --muted: #3a5568;
+    --sky: #b3e7f6;
+    --sky-deep: #86d4ee;
+    --contrast: #f15a00;
+    --contrast-deep: #d24c00;
+    --line: #7ec3d8;
     --max: 1240px;
 }
 
@@ -70,11 +74,9 @@ h3 { font-family: "Outfit", sans-serif; font-size: 1.35rem; font-weight: 620; le
     background: var(--sky);
     border-bottom: 1px solid var(--ink);
 }
-.header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 76px; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 96px; }
 .logo { display: inline-flex; align-items: center; color: var(--ink); text-decoration: none; }
-.logo-words { display: flex; flex-direction: column; line-height: 1; }
-.logo-live { font-size: 1.25rem; }
-.logo-sub { font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; font-weight: 620; }
+.logo img { height: 78px; width: auto; }
 .site-nav { display: flex; align-items: center; gap: 28px; }
 .site-nav ul { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; }
 .site-nav ul a {
@@ -91,7 +93,7 @@ h3 { font-family: "Outfit", sans-serif; font-size: 1.35rem; font-weight: 620; le
 .hero {
     display: grid;
     grid-template-columns: 1.45fr .7fr;
-    min-height: calc(100vh - 76px);
+    min-height: calc(100vh - 96px);
     background: var(--sky);
 }
 .hero-copy {
@@ -269,7 +271,7 @@ h3 { font-family: "Outfit", sans-serif; font-size: 1.35rem; font-weight: 620; le
 
 /* Footer */
 .site-footer { background: var(--ink); color: #d5dee6; padding: 64px 0 28px; }
-.site-footer .logo { color: #fff; }
+.site-footer .logo img { height: 84px; }
 .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px; }
 .site-footer p { margin: 12px 0 0; max-width: 22rem; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
@@ -281,7 +283,7 @@ h3 { font-family: "Outfit", sans-serif; font-size: 1.35rem; font-weight: 620; le
     .nav-toggle { display: block; }
     .site-header { position: sticky; }
     .site-nav {
-        display: none; position: absolute; top: 76px; left: 0; right: 0;
+        display: none; position: absolute; top: 96px; left: 0; right: 0;
         background: var(--sky); border-bottom: 1px solid var(--ink);
         flex-direction: column; align-items: flex-start; padding: 18px 28px 22px; gap: 16px;
     }

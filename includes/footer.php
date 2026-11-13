@@ -2,7 +2,7 @@
 <footer class="site-footer">
     <div class="container footer-inner">
         <div>
-            <a class="logo" href="/"><span class="logo-words"><span class="logo-live">Live Long</span><span class="logo-sub">Training</span></span></a>
+            <a class="logo" href="/"><img src="/img/logo-footer.png" alt="Live Long Training"></a>
             <p><?= e(SITE_TAGLINE) ?></p>
         </div>
         <nav aria-label="Footer">
