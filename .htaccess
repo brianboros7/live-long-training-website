@@ -1,0 +1,28 @@
+RewriteEngine On
+DirectoryIndex index.php
+ErrorDocument 404 /404.php
+Options -Indexes
+
+# Keep private folders and repo files out of reach
+RewriteRule ^(includes|storage)(/|$) - [F,L]
+RewriteRule ^(README\.md|router\.php|\.cpanel\.yml|\.git.*)$ - [F,L]
+
+# Uncomment once the domain and SSL are live:
+# RewriteCond %{HTTPS} off
+# RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect /page.php to /page
+RewriteCond %{THE_REQUEST} \s/([^.\s?]+)\.php[\s?]
+RewriteRule ^ /%1 [R=301,L]
+
+# Old audience URL
+RewriteRule ^programs/women-50/?$ /programs/women-45 [R=301,L]
+
+# Program pages: /programs/men-60 -> programs.php?slug=men-60
+RewriteRule ^programs/([a-z0-9-]+)/?$ programs.php?slug=$1 [L,QSA]
+
+# Clean URLs: /about -> about.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([a-z0-9-]+)/?$ $1.php [L,QSA]
