@@ -237,7 +237,7 @@ h3 { font-family: "Outfit", sans-serif; font-size: 1.35rem; font-weight: 620; le
 .focus-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--ink); }
 .focus-card { padding: 40px 36px; background: var(--sky-deep); }
 .focus-card:last-child { background: var(--ink); color: #fff; box-shadow: inset 8px 0 0 var(--contrast); }
-.focus-card h2 { margin-top: 0; font-size: clamp(2rem, 3vw, 2.8rem); }
+.focus-card h2, .focus-card h3 { margin-top: 0; font-size: clamp(2rem, 3vw, 2.8rem); }
 .focus-card > p { color: var(--ink); }
 .focus-card:last-child > p,
 .focus-card:last-child .checklist li { color: #d7e4ec; }

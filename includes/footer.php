@@ -9,9 +9,9 @@
             <nav aria-label="Programs">
                 <h2>Programs</h2>
                 <ul>
-                    <li><a href="/programs/women-25">Women 25+</a></li>
-                    <li><a href="/programs/women-45">Women 45+</a></li>
-                    <li><a href="/programs/men-60">Men 60+</a></li>
+                    <li><a href="/programs/ages-25-plus">Ages 25+</a></li>
+                    <li><a href="/programs/ages-40-plus">Ages 40+</a></li>
+                    <li><a href="/programs/ages-55-plus">Ages 55+</a></li>
                 </ul>
             </nav>
             <nav aria-label="Coaching">

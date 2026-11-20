@@ -15,10 +15,9 @@ RewriteRule ^(README\.md|router\.php|\.cpanel\.yml|\.git.*)$ - [F,L]
 RewriteCond %{THE_REQUEST} \s/([^.\s?]+)\.php[\s?]
 RewriteRule ^ /%1 [R=301,L]
 
-# Old audience URL
-RewriteRule ^programs/women-50/?$ /programs/women-45 [R=301,L]
+# Old audience URLs (women-25, women-45, women-50, men-60) redirect in programs.php
 
-# Program pages: /programs/men-60 -> programs.php?slug=men-60
+# Program pages: /programs/ages-55-plus -> programs.php?slug=ages-55-plus
 RewriteRule ^programs/([a-z0-9-]+)/?$ programs.php?slug=$1 [L,QSA]
 
 # Clean URLs: /about -> about.php

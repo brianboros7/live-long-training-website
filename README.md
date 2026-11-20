@@ -1,6 +1,6 @@
 # Live Long Training — website
 
-Starter PHP site for Live Long Training: strength coaching for men over 60, women over 45 and women 25+. No framework or build step; plain PHP 8.1+, CSS and a little JS.
+Starter PHP site for Live Long Training: strength and functional fitness coaching for men and women in three age bands: 25+, 40+ and 55+. No framework or build step; plain PHP 8.1+, CSS and a little JS.
 
 ## Run locally
 
@@ -21,7 +21,7 @@ Then open http://localhost:8000.
 | `contact.php` | Free consult form (CSRF + honeypot; logs to `storage/messages.log`, emails `CONTACT_TO` if set) |
 | `404.php` | Not found page |
 | `includes/config.php` | Site name, nav, contact email, helpers |
-| `includes/programs.php` | Content for the three audience programs |
+| `includes/programs.php` | Content for the three age-band programs (and redirects from the old audience URLs) |
 | `includes/header.php`, `footer.php` | Shared layout |
 | `css/style.css`, `js/main.js` | Styles and mobile menu |
 | `.htaccess` | Clean URLs on Apache/cPanel |

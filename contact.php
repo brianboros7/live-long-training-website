@@ -10,6 +10,7 @@ if (empty($_SESSION['csrf'])) {
 $errors = [];
 $sent   = false;
 $values = ['name' => '', 'email' => '', 'program' => $_GET['program'] ?? '', 'message' => ''];
+$values['program'] = PROGRAM_REDIRECTS[$values['program']] ?? $values['program'];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach ($values as $key => $_) {

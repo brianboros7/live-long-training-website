@@ -6,16 +6,16 @@ require __DIR__ . '/includes/header.php';
 <section class="page-hero">
     <div class="container">
         <h1>About Live Long Training</h1>
-        <p class="lead">We coach three groups, from the mid-20s to the 80s. The promise is the same. The program is not.</p>
+        <p class="lead">We coach men and women from the mid-20s to the 80s, in three age bands. The promise is the same. The program is not.</p>
     </div>
 </section>
 
 <section class="section">
     <div class="container narrow prose">
         <h2>Who it's for</h2>
-        <p><strong><a href="/programs/women-25">Women 25+.</a></strong> Short, progressive sessions for busy years, including pregnancy and postpartum when you need them. Strength you build now is what you take into your 40s.</p>
-        <p><strong><a href="/programs/women-45">Women over 45.</a></strong> Muscle and bone from perimenopause through the years after menopause, with a plan that flexes when sleep and energy change.</p>
-        <p><strong><a href="/programs/men-60">Men over 60.</a></strong> Strength, power and balance for an independent life. Food and recovery, without testosterone marketing.</p>
+        <p><strong><a href="/programs/ages-25-plus">Ages 25+.</a></strong> Men and women in their busiest years. Learn the lifts, build real capacity, and bank muscle and bone for later, including pregnancy and postpartum when you need them.</p>
+        <p><strong><a href="/programs/ages-40-plus">Ages 40+.</a></strong> Men and women in midlife. Keep muscle, power and bone as things change, including perimenopause, with a plan that flexes when sleep and energy do.</p>
+        <p><strong><a href="/programs/ages-55-plus">Ages 55+.</a></strong> Men and women who want an independent, active life. Strength, power and balance, with a careful path for low bone density and no testosterone marketing.</p>
 
         <h2>Our approach</h2>
         <p><strong>Evidence first.</strong> We follow the research, not trends. No hormone hype, no gimmick workouts, no secret formulas.</p>

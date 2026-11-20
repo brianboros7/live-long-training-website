@@ -4,6 +4,10 @@ require __DIR__ . '/includes/config.php';
 require __DIR__ . '/includes/programs.php';
 
 $slug    = $_GET['slug'] ?? '';
+if (isset(PROGRAM_REDIRECTS[$slug])) {
+    header('Location: /programs/' . PROGRAM_REDIRECTS[$slug], true, 301);
+    exit;
+}
 $program = $slug !== '' ? (PROGRAMS[$slug] ?? null) : null;
 
 if ($slug !== '' && $program === null) {
@@ -13,7 +17,7 @@ if ($slug !== '' && $program === null) {
 }
 
 if ($program) {
-    $pageTitle       = $program['title'] . ' Strength Coaching';
+    $pageTitle       = $program['title'] . ' Strength and Functional Fitness';
     $pageDescription = $program['intro'];
 } else {
     $pageTitle = 'Programs';
@@ -33,9 +37,28 @@ require __DIR__ . '/includes/header.php';
 <section class="section">
     <div class="container">
         <div class="focus-grid">
-            <?php foreach (['strength' => 'Strength', 'wellness' => 'Wellness'] as $key => $label): ?>
+            <?php foreach (['strength' => 'Strength', 'functional' => 'Functional fitness'] as $key => $label): ?>
                 <article class="focus-card">
                     <h2><?= e($label) ?></h2>
+                    <p><?= e($program[$key]['lead']) ?></p>
+                    <ul class="checklist">
+                        <?php foreach ($program[$key]['points'] as $point): ?>
+                            <li><?= e($point) ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </article>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">For women and for men</h2>
+        <div class="focus-grid">
+            <?php foreach (['women' => 'Women', 'men' => 'Men'] as $key => $label): ?>
+                <article class="focus-card">
+                    <h3><?= e($label) ?></h3>
                     <p><?= e($program[$key]['lead']) ?></p>
                     <ul class="checklist">
                         <?php foreach ($program[$key]['points'] as $point): ?>
@@ -63,7 +86,7 @@ require __DIR__ . '/includes/header.php';
 <section class="page-hero">
     <div class="container">
         <h1>Programs</h1>
-        <p class="lead">Three programs, because strength and wellness needs are not the same at 25, 45 and 60. Same standard of evidence. Different work.</p>
+        <p class="lead">Three age bands, each for men and women, each covering strength and functional fitness. The work is not the same at 30, 45 and 65. The standard of evidence is.</p>
     </div>
 </section>
 <section class="section">

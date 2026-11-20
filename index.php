@@ -7,10 +7,10 @@ require __DIR__ . '/includes/header.php';
     <div class="hero-copy">
         <p class="eyebrow">Strength coaching for every decade</p>
         <h1>Train strong now.<span>Live long and well.</span></h1>
-        <p class="lead">Three or four sessions a week, about an hour each. Coached for women 25+, women over 45, and men over 60, because the strength work and the wellness needs are not the same.</p>
+        <p class="lead">Three or four sessions a week, about an hour each. Strength and functional fitness for men and women, coached by age band: 25+, 40+ and 55+, because the work changes as you do.</p>
         <div class="hero-actions">
             <a class="btn" href="/contact">Book a free consult</a>
-            <a class="btn btn-ghost" href="/programs">See the three programs</a>
+            <a class="btn btn-ghost" href="/programs">See the programs</a>
         </div>
     </div>
     <aside class="hero-spec">
@@ -29,7 +29,7 @@ require __DIR__ . '/includes/header.php';
     <div class="container">
         <div class="roster-head">
             <h2>Who we coach</h2>
-            <p>Pick the decade you're in. Each program has its own page.</p>
+            <p>Men and women, in three age bands. Pick yours. Each has its own page.</p>
         </div>
         <?php $n = 1; foreach (PROGRAMS as $slug => $p): ?>
             <a class="roster-row" href="/programs/<?= e($slug) ?>">

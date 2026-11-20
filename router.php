@@ -9,10 +9,6 @@ if (preg_match('#^/(includes|storage)(/|$)#', $path)) {
 if ($path !== '/' && is_file(__DIR__ . $path) && !str_ends_with($path, '.php')) {
     return false; // serve static files (css, js, images)
 }
-if (preg_match('#^/programs/women-50/?$#', $path)) {
-    header('Location: /programs/women-45', true, 301);
-    return true;
-}
 if (preg_match('#^/programs/([a-z0-9-]+)/?$#', $path, $m)) {
     $_GET['slug'] = $m[1];
     require __DIR__ . '/programs.php';

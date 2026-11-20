@@ -1,7 +1,7 @@
 <?php
 // Shared page header. Set $pageTitle and $pageDescription before including.
 $pageTitle       = isset($pageTitle) ? $pageTitle . ' | ' . SITE_NAME : SITE_NAME . ' | ' . SITE_TAGLINE;
-$pageDescription = $pageDescription ?? 'Evidence-based strength coaching for women 25+, women over 45 and men over 60.';
+$pageDescription = $pageDescription ?? 'Evidence-based strength and functional fitness coaching for men and women aged 25+, 40+ and 55+.';
 ?>
 <!doctype html>
 <html lang="en">

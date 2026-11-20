@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 const SITE_NAME    = 'Live Long Training';
-const SITE_TAGLINE = 'Strength coaching for a longer, stronger life';
+const SITE_TAGLINE = 'Strength and functional fitness for a longer, stronger life';
 const SITE_URL     = 'https://www.livelongtraining.com'; // placeholder domain
 const CONTACT_TO   = '';  // where contact form emails go; leave empty to only log messages
 
@@ -13,9 +13,9 @@ const NAV = [
         'label' => 'Programs',
         'href'  => '/programs',
         'items' => [
-            ['href' => '/programs/women-25', 'label' => 'Women 25+'],
-            ['href' => '/programs/women-45', 'label' => 'Women 45+'],
-            ['href' => '/programs/men-60', 'label' => 'Men 60+'],
+            ['href' => '/programs/ages-25-plus', 'label' => 'Ages 25+'],
+            ['href' => '/programs/ages-40-plus', 'label' => 'Ages 40+'],
+            ['href' => '/programs/ages-55-plus', 'label' => 'Ages 55+'],
         ],
     ],
     [
